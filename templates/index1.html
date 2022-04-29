@@ -1,18 +1,48 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 
-  <body>
+<body>
     <div class="container">
         <div class="row">
             <div class="col-lg-8  offset-lg-2">
-                <a href="http://localhost:5000/" class="btn">Lets Start</a>
+                <a href="http://localhost:5000/result" class="btn">Lets Start</a>
                 <h3 class="mt-5">Live Streaming</h3>
-                <img src="{{ url_for('/predict/camera') }}" width="50%">
+
+                <div style="text-align: center; width: 100%; border: 1px solid black;">
+                    <img src="{{ url_for('camera') }}" width="50%"
+                        style="justify-content: center; display: flex; margin-top: 30px ;">
+                </div>
+
             </div>
         </div>
     </div>
-    </body>
+</body>
+
+
+</html>
+
+
+<!DOCTYPE html>
+<html> -->
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                
+                <h3 class="mt-5" style="text-align: center">Live Streaming</h3>
+                
+                <div style="text-align: center">
+                    <img width="50%" src="{{ url_for('camera') }}">
+                    <figcaption><a href="http://localhost:5000/result" class="btn">Lets Start</a></figcaption>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
 
 
 </html>
